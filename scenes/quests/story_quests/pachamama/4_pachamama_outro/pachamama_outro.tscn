@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://c8c62pe22nlxs"]
+[gd_scene load_steps=7 format=4 uid="uid://c8c62pe22nlxs"]
 
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_hsvx8"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_kqnsw"]
 [ext_resource type="SpriteFrames" uid="uid://t34p1kiw610y" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/pachamama_player.tres" id="3_k5fsu"]
+[ext_resource type="Texture2D" uid="uid://c1wdfgo8bmvkn" path="res://scenes/quests/story_quests/pachamama/4_pachamama_outro/pachamama_outro_components/fondo_outro.png" id="3_nhhlk"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_dmq6n"]
 [ext_resource type="Resource" uid="uid://c1066voa6ebyr" path="res://scenes/quests/story_quests/pachamama/4_pachamama_outro/pachamama_outro_components/pachamama_outro.dialogue" id="5_nhhlk"]
 
@@ -29,6 +30,11 @@ tile_set = ExtResource("2_kqnsw")
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers"]
 tile_map_data = PackedByteArray("AAAGAAYAAQAIAAMAAAAFAAUAAQAIAAMAAAAGAAQAAQAIAAMAAAAHAAUAAQAIAAMAAAAEAAYAAQAIAAMAAAAEAAQAAQAIAAMAAAAIAAYAAQAIAAMAAAAIAAQAAQAIAAMAAAA=")
 tile_set = ExtResource("2_kqnsw")
+
+[node name="Sprite2D" type="Sprite2D" parent="TileMapLayers"]
+position = Vector2(476.5, 290)
+scale = Vector2(1.40375, 1.20848)
+texture = ExtResource("3_nhhlk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(153, 366)

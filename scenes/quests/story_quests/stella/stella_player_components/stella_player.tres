@@ -1,9 +1,10 @@
-[gd_resource type="SpriteFrames" load_steps=36 format=3 uid="uid://dn0ivusgamrg3"]
+[gd_resource type="SpriteFrames" load_steps=40 format=3 uid="uid://dn0ivusgamrg3"]
 
 [ext_resource type="Texture2D" uid="uid://clt7i8qakhxxd" path="res://scenes/quests/story_quests/stella/stella_player_components/stella_player_attack_01.png" id="1_caovh"]
 [ext_resource type="Texture2D" uid="uid://c8yx8g48wcyx" path="res://scenes/quests/story_quests/stella/stella_player_components/stella_player_defeated.png" id="2_caxau"]
 [ext_resource type="Texture2D" uid="uid://b5b3f8rk5ctfk" path="res://scenes/quests/story_quests/stella/stella_player_components/stella_player_idle.png" id="3_caovh"]
 [ext_resource type="Texture2D" uid="uid://dkkq0lfjandks" path="res://scenes/quests/story_quests/stella/stella_player_components/stella_player_walk.png" id="4_caovh"]
+[ext_resource type="Texture2D" uid="uid://ciqph8tkedlgj" path="res://scenes/quests/story_quests/stella/stella_player_components/puma.png" id="4_caxau"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_caxau"]
 atlas = ExtResource("1_caovh")
@@ -104,6 +105,18 @@ region = Rect2(0, 0, 192, 192)
 [sub_resource type="AtlasTexture" id="AtlasTexture_kj51f"]
 atlas = ExtResource("3_caovh")
 region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rnbn"]
+atlas = ExtResource("4_caxau")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_noo2v"]
+atlas = ExtResource("4_caxau")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gh63h"]
+atlas = ExtResource("4_caxau")
+region = Rect2(384, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pujvl"]
 atlas = ExtResource("4_caovh")
@@ -219,6 +232,20 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rnbn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_noo2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gh63h")
+}],
+"loop": true,
+"name": &"puma",
 "speed": 10.0
 }, {
 "frames": [{
