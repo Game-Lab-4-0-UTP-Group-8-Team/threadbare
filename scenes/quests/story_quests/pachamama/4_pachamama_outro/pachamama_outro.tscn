@@ -12,21 +12,6 @@
 [ext_resource type="SpriteFrames" uid="uid://dn0ivusgamrg3" path="res://scenes/quests/story_quests/stella/stella_player_components/stella_player.tres" id="8_r6sgi"]
 [ext_resource type="SpriteFrames" uid="uid://bhgql0ra7k30g" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/condor_player.tres" id="9_4q3kc"]
 
-[sub_resource type="Animation" id="Animation_s8akl"]
-resource_name = "walk_on"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Condor:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(267, 277), Vector2(700, 277)]
-}
-
 [sub_resource type="Animation" id="Animation_4t44l"]
 length = 0.001
 tracks/0/type = "value"
@@ -67,6 +52,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [&"defeated", &"idle"]
+}
+
+[sub_resource type="Animation" id="Animation_s8akl"]
+resource_name = "walk_on"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Condor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(267, 277), Vector2(700, 277)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6qdvm"]
