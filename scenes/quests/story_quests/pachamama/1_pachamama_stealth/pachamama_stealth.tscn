@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://dya186q36seg5"]
+[gd_scene load_steps=24 format=4 uid="uid://dya186q36seg5"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_skep1"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_na2k4"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="5_bv24p"]
 [ext_resource type="Resource" uid="uid://cppk2qynt485b" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_checkpoint.dialogue" id="6_r4o5p"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="7_aidrn"]
+[ext_resource type="SpriteFrames" uid="uid://dw57gnixghml5" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/puma_player.tres" id="7_latm2"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_mmkc0"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_2dsy1"]
 [ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_mhjmd"]
@@ -367,7 +368,8 @@ tile_map_data = PackedByteArray("AAABAGcABAABAAEAAAAAAAAABAABAAEAAAAAAAEABAABAAE
 tile_set = ExtResource("2_na2k4")
 
 [node name="Player" parent="." instance=ExtResource("3_5tw6b")]
-position = Vector2(131, 463)
+position = Vector2(129, 419)
+sprite_frames = ExtResource("7_latm2")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 process_mode = 3
@@ -729,7 +731,7 @@ dialogue = ExtResource("12_v5fnx")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Tree2" parent="." instance=ExtResource("13_po374")]
-position = Vector2(147, 606)
+position = Vector2(96, 620)
 scale = Vector2(0.864437, 0.876015)
 
 [node name="Tree" parent="." instance=ExtResource("13_po374")]
@@ -819,7 +821,7 @@ position = Vector2(238, 606)
 scale = Vector2(0.864437, 0.876015)
 
 [node name="Tree114" parent="Tree9" instance=ExtResource("13_po374")]
-position = Vector2(50.9002, 6.84923)
+position = Vector2(57.8411, 7.99076)
 scale = Vector2(1.0932, 1.02738)
 sprite_frames = ExtResource("14_latm2")
 
@@ -841,7 +843,7 @@ position = Vector2(129.564, 1.14153)
 scale = Vector2(0.733647, 0.813072)
 
 [node name="Tree11" parent="." instance=ExtResource("13_po374")]
-position = Vector2(509, 606)
+position = Vector2(427, 612)
 scale = Vector2(0.864437, 0.876015)
 
 [node name="Tree114" parent="Tree11" instance=ExtResource("13_po374")]
@@ -858,7 +860,7 @@ position = Vector2(693, 608)
 scale = Vector2(0.864437, 0.876015)
 
 [node name="Tree114" parent="Tree12" instance=ExtResource("13_po374")]
-position = Vector2(53.2139, 2.83718e-05)
+position = Vector2(-70.5662, 7.99076)
 scale = Vector2(1.0932, 1.02738)
 sprite_frames = ExtResource("14_latm2")
 
@@ -867,7 +869,7 @@ position = Vector2(850, 624)
 scale = Vector2(0.864437, 0.876015)
 
 [node name="Tree114" parent="Tree13" instance=ExtResource("13_po374")]
-position = Vector2(-62.4684, -19.406)
+position = Vector2(-163.112, -7.99074)
 scale = Vector2(1.0932, 1.02738)
 sprite_frames = ExtResource("14_latm2")
 
@@ -2404,7 +2406,7 @@ position = Vector2(1006, 161)
 texture = ExtResource("16_k2pjd")
 
 [node name="Tree113" parent="." instance=ExtResource("13_po374")]
-position = Vector2(431, 618)
+position = Vector2(339, 616)
 scale = Vector2(0.945, 0.9)
 sprite_frames = ExtResource("14_latm2")
 
