@@ -1,25 +1,25 @@
 [gd_resource type="SpriteFrames" load_steps=17 format=3 uid="uid://dw57gnixghml5"]
 
-[ext_resource type="Texture2D" uid="uid://bdd1tina6d50o" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/pachamama_player_attack_01.png" id="1_6nbwa"]
+[ext_resource type="Texture2D" uid="uid://cplt7ys7p72b2" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/Puma_player_fightone.png" id="1_6nbwa"]
 [ext_resource type="Texture2D" uid="uid://hjj0vqy35q25" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/pachamama_player_defeated.png" id="2_gmpgi"]
 [ext_resource type="Texture2D" uid="uid://bh53vogkfv8py" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/Puma_player_idle (1).png" id="3_6nbwa"]
 [ext_resource type="Texture2D" uid="uid://dopelur3vj3sy" path="res://scenes/quests/story_quests/pachamama/pachamama_player_components/Puma_player_walk.png" id="4_gmpgi"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kc385"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmpgi"]
 atlas = ExtResource("1_6nbwa")
-region = Rect2(0, 0, 192, 192)
+region = Rect2(0, 0, 191, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sa6sr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxu7c"]
 atlas = ExtResource("1_6nbwa")
-region = Rect2(192, 0, 192, 192)
+region = Rect2(191, 0, 191, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cprey"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcwjy"]
 atlas = ExtResource("1_6nbwa")
-region = Rect2(384, 0, 192, 192)
+region = Rect2(382, 0, 191, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vbl3h"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvx44"]
 atlas = ExtResource("1_6nbwa")
-region = Rect2(576, 0, 192, 192)
+region = Rect2(573, 0, 191, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lqd8l"]
 atlas = ExtResource("2_gmpgi")
@@ -57,16 +57,16 @@ region = Rect2(384, 0, 192, 192)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kc385")
+"texture": SubResource("AtlasTexture_gmpgi")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_sa6sr")
+"texture": SubResource("AtlasTexture_rxu7c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cprey")
+"texture": SubResource("AtlasTexture_vcwjy")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vbl3h")
+"texture": SubResource("AtlasTexture_mvx44")
 }],
 "loop": true,
 "name": &"attack_01",
@@ -88,7 +88,28 @@ animations = [{
 "texture": SubResource("AtlasTexture_gmpp0")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_gmpp0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmpp0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmpp0")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ioj4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ioj4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpvb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpvb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpvb5")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qpvb5")
@@ -102,7 +123,16 @@ animations = [{
 "texture": SubResource("AtlasTexture_4twhn")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_4twhn")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_0slod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0slod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3sfn")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_q3sfn")
