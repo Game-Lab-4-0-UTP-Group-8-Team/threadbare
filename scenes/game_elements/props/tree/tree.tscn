@@ -9,7 +9,7 @@ radius = 16.187
 height = 41.3562
 
 [node name="Tree" type="Node2D"]
-scale = Vector2(1.00684, 0.94581)
+scale = Vector2(1.19429, 1.13612)
 script = ExtResource("1_7ot8u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -19,6 +19,7 @@ material = ExtResource("2_f0x1c")
 position = Vector2(0, -79.7941)
 sprite_frames = ExtResource("3_f0x1c")
 autoplay = "default"
+frame = 1
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 16
