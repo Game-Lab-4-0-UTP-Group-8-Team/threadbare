@@ -294,13 +294,11 @@ position = Vector2(174, 340)
 sprite_frames = ExtResource("5_53v2m")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.371724
 
 [node name="Puma" type="AnimatedSprite2D" parent="OnTheGround"]
 sprite_frames = ExtResource("6_53v2m")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.371724
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround"]
 root_node = NodePath("../..")

@@ -17,34 +17,46 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Condor:position")
+tracks/0/path = NodePath("Diosa:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(267, 277)]
+"update": 1,
+"values": [&"attack_01"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Diosa:animation")
+tracks/1/path = NodePath("Puma:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"attack_01"]
+"update": 0,
+"values": [Vector2(268, 276)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Condor:animation")
+tracks/2/path = NodePath("Puma:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Puma:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -53,6 +65,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_xgwoh"]
 resource_name = "despertar"
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -60,7 +73,7 @@ tracks/0/path = NodePath("Diosa:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [&"defeated", &"idle"]
@@ -68,29 +81,42 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_s8akl"]
 resource_name = "walk_on"
+length = 4.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Condor:position")
+tracks/0/path = NodePath("Puma:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 4.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(267, 277), Vector2(700, 277)]
+"values": [Vector2(268, 276), Vector2(720, 276)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Condor:animation")
+tracks/1/path = NodePath("Puma:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.433333, 0.866667, 1.3, 1.73333, 2.16667, 2.6, 3.03333, 3.56667, 4.06667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [&"walk", &"idle"]
+"values": [0, 1, 3, 4, 5, 0, 1, 2, 4, 1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Puma:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3.86667, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [&"walk", &"attack_01", &"idle"]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6qdvm"]
@@ -156,23 +182,27 @@ y_sort_enabled = true
 [node name="Pinguino" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(266, 368)
 sprite_frames = ExtResource("3_k5fsu")
-animation = &"idle"
+animation = &"attack_01"
 autoplay = "idle"
+frame = 1
+frame_progress = 0.0138823
 
 [node name="Puma" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(258, 137)
+position = Vector2(268, 276)
 sprite_frames = ExtResource("7_xgwoh")
 animation = &"idle"
 autoplay = "idle"
+frame = 1
+speed_scale = 2.0
 
 [node name="Diosa" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(795, 284)
+position = Vector2(794, 277)
 sprite_frames = ExtResource("8_r6sgi")
 animation = &"attack_01"
 autoplay = "idle"
 
 [node name="Condor" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(267, 277)
+position = Vector2(264, 159)
 sprite_frames = ExtResource("9_4q3kc")
 animation = &"idle"
 autoplay = "idle"
