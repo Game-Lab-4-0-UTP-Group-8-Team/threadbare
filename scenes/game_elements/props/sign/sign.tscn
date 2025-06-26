@@ -15,10 +15,13 @@ radius = 80.0
 script = ExtResource("1_cb2ey")
 
 [node name="Appearance" type="Sprite2D" parent="."]
+position = Vector2(-2, -4)
+rotation = 0.00914904
 texture = ExtResource("2_85li6")
 offset = Vector2(0, -30)
 
 [node name="Collider" type="StaticBody2D" parent="."]
+position = Vector2(-3, -5)
 collision_layer = 16
 collision_mask = 0
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://onkhxw3sg8tc"
-path="res://.godot/imported/puma_player_idle.png-1e029f0a7495d024937fd6c5d5c44567.ctex"
+path="res://.godot/imported/Puma_player_idle.png-a2f5c08b5ca5885fef7885ff281c8d37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/pachamama/pachamama_player_components/puma_player_idle.png"
-dest_files=["res://.godot/imported/puma_player_idle.png-1e029f0a7495d024937fd6c5d5c44567.ctex"]
+source_file="res://scenes/quests/story_quests/pachamama/pachamama_player_components/Puma_player_idle.png"
+dest_files=["res://.godot/imported/Puma_player_idle.png-a2f5c08b5ca5885fef7885ff281c8d37.ctex"]
 
 [params]
 
