@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://cvjwp7cli3c1k"]
+[gd_scene load_steps=19 format=4 uid="uid://cvjwp7cli3c1k"]
 
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="1_gdjcp"]
 [ext_resource type="Resource" uid="uid://3vrn5jdxov37" path="res://scenes/quests/story_quests/template/2_template_combat/template_combat_components/template_combat.dialogue" id="2_23len"]
@@ -15,6 +15,7 @@
 [ext_resource type="SpriteFrames" uid="uid://djwymcffy83" path="res://scenes/game_elements/props/tree/components/tree_spriteframes_red.tres" id="12_kr8di"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="13_o8qn3"]
 [ext_resource type="Resource" uid="uid://cppk2qynt485b" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_checkpoint.dialogue" id="14_unij8"]
+[ext_resource type="PackedScene" uid="uid://covsdqqsd6rsy" path="res://scenes/game_elements/props/sign/sign.tscn" id="16_ugqfp"]
 
 [sub_resource type="Resource" id="Resource_a51xm"]
 script = ExtResource("9_q52ps")
@@ -554,5 +555,11 @@ dialogue = ExtResource("14_unij8")
 position = Vector2(16.0021, -2.98962)
 shape = SubResource("RectangleShape2D_ugqfp")
 debug_color = Color(0, 0, 0, 0.42)
+
+[node name="Sign" parent="." instance=ExtResource("16_ugqfp")]
+position = Vector2(715, 373)
+direction = 1
+text = "The Magical Melody
+"
 
 [connection signal="goal_reached" from="FillGameLogic" to="OnTheGround/CollectibleItem" method="reveal"]
