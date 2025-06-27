@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b17hf2pawv53"
+path="res://.godot/imported/368640__megablasterrecordings__couch-hit.wav-514fb133fed4e171e6c02f04578ef1fd.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/pachamama/0_pachamama_intro/pachamama_intro_components/SONIDOS INTRO/368640__megablasterrecordings__couch-hit.wav"
+dest_files=["res://.godot/imported/368640__megablasterrecordings__couch-hit.wav-514fb133fed4e171e6c02f04578ef1fd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
