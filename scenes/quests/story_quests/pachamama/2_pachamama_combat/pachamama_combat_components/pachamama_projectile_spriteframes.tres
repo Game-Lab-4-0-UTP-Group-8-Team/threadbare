@@ -1,16 +1,16 @@
 [gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://cqt7qb7bnriy7"]
 
-[ext_resource type="Texture2D" uid="uid://cagyo41xspko" path="res://scenes/quests/story_quests/template/2_template_combat/template_combat_components/template_projectile.png" id="1_5jtbc"]
+[ext_resource type="Texture2D" uid="uid://d0i1imapoo3ia" path="res://scenes/quests/story_quests/pachamama/2_pachamama_combat/pachamama_combat_components/pachamama_serpiente_Proyectik.png" id="1_ur7m1"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a6ony"]
-atlas = ExtResource("1_5jtbc")
-region = Rect2(0, 0, 64, 64)
+[sub_resource type="AtlasTexture" id="AtlasTexture_emkb2"]
+atlas = ExtResource("1_ur7m1")
+region = Rect2(0, 0, 192, 192)
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a6ony")
+"texture": SubResource("AtlasTexture_emkb2")
 }],
 "loop": true,
 "name": &"default",
