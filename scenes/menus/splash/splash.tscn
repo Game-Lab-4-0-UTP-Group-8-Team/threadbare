@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dggoe706nwbky" path="res://scenes/menus/splash/components/splash.gd" id="1_a6n0j"]
 [ext_resource type="Texture2D" uid="uid://bay28tg4l1p1h" path="res://assets/third_party/endless/logo.png" id="2_a6n0j"]
-[ext_resource type="Texture2D" uid="uid://bvlx57seuur65" path="res://assets/first_party/intro/background.png" id="2_cy8yo"]
+[ext_resource type="Texture2D" uid="uid://bvlx57seuur65" path="res://scenes/quests/story_quests/pachamama/2_pachamama_combat/background.png" id="2_cy8yo"]
 [ext_resource type="Script" uid="uid://bcc0gc6fkr2m4" path="res://scenes/menus/splash/components/logo_stitcher.gd" id="3_m61hw"]
 [ext_resource type="AudioStream" uid="uid://dwkbxxoh57hht" path="res://assets/third_party/sewing-machine/746897__kzarkses__machantq_sewing-machine-running_cp_none_mke600.ogg" id="4_xtuk2"]
 
